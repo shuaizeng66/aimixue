@@ -1,0 +1,287 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+
+/* 抬头 */
+#head{
+    width: 100%;
+    height: 50px;
+}
+#head .head_left{
+    width: 36%;
+    text-align: center;
+    float: left;
+}
+#head .head_left h4{
+    font-size: 18px;
+    font-family: serif;
+    margin-top: 7px;
+}
+#head .head_left h6{
+    font-size: 10px;
+    letter-spacing: 15px;
+    margin-left: 12px;
+    color: rgb(37, 33, 42);
+}
+#head .head_rigth{
+    width: 60%;
+    float: left;
+}
+#head .head_rigth ul{
+    overflow: hidden;
+    text-align: left;
+    line-height: 50px;
+}
+#head .head_rigth ul li{
+    width: 115px;
+    float: left;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+}
+#head .head_rigth ul a{
+    padding-bottom: 4px;
+    text-decoration: none;
+    color: #000;
+}
+
+#head .head_rigth ul a.active{
+    border-bottom: 2px solid #fda596;
+    color: #fda596;
+}
+/* 抬头end */
+
+
+
+/* 轮播 */
+#carousel{
+    width: 100%;
+    height: 315px;
+    position: relative;
+}
+
+#carousel .car_img{
+    width: 100%;
+    height: 315px;
+    position: relative;
+}
+#carousel .car_img img{
+    width: 100%;
+    height: 315px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: all 1s;
+}
+#carousel .car_img img.active_car{
+    opacity: 1 ;
+}
+#carousel button{
+    width: 60px;
+    height: 60px;
+    background: rgba(0, 0, 0, .5);
+    color: aliceblue;
+    cursor: pointer;
+    border-radius: 50%;
+    outline: none;
+    position: absolute;
+    top: 50%;
+    margin-top: -25px;
+    border: 2px solid #000;
+    font-size: 20px;
+}
+#carousel button:nth-of-type(1){
+    left: 0px;;
+}
+#carousel button:nth-of-type(2){
+    right: 0px;
+}
+#carousel button:hover{
+    border: 2px solid #fff;
+}
+#carousel ul{
+    position: absolute;
+    left: 47%;
+    bottom: 35px;
+}
+#carousel ul li{
+    width: 10px;
+    height: 10px;
+    background: rgb(14, 1, 1);
+    float: left;
+    margin: 0 10px;
+    border-radius: 50%;
+    border: 1px solid white;
+    cursor: pointer;
+}
+#carousel ul li.active_car{
+    background: #fff;
+}
+/* 轮播end */
+
+/* nav */
+#nav{
+    width: 1065px;
+    height: 50px;
+    margin: auto;
+    border-bottom: 1px solid #666666;
+    position: relative;
+}
+#nav span {
+    width: 100px;
+    height: 5px;
+    background: white;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+}
+#nav .nav_box{
+    width: 180px;
+    height: 50px;
+    float: right;
+    position: relative;
+}
+#nav .nav_box h6{
+    position: absolute;
+    bottom: 0;
+    font-size: 14px;
+    font-weight: 500;
+}
+#nav .nav_box h6:nth-of-type(1){
+    left: 0;
+}
+#nav .nav_box h6:nth-of-type(2){
+    left: 27%;
+}
+#nav .nav_box h6:nth-of-type(3){
+    right: 0;
+    color: red;
+}
+
+/* nav end */
+
+
+/* pro-tab */
+#pro_con{
+    width: 1065px;
+    height: 500px;
+    margin: auto;
+}
+#pro_con .pro_tab{
+    width: 140px;
+    height: 300px;
+    float: left;
+    position: relative;
+}
+#pro_con .pro_tab img{
+    position: absolute;
+    left: 3px;
+    top: 9px;
+}
+
+#pro_con>.pro_tab>span:nth-of-type(1){
+    height: 15px;
+    border: 0.5px solid #000000;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+#pro_con>.pro_tab>span:nth-of-type(2){
+    position: absolute;
+    right: 0;
+    top: 55px;
+}
+#pro_con>.pro_tab>h3{
+    position: absolute;
+    left: 32px;
+    top: 0px;
+}
+#pro_con>.pro_tab>a{
+    position: absolute;
+    text-decoration: none;
+    left: 44px;
+    cursor: pointer;
+}
+#pro_con>.pro_tab>a:nth-of-type(1){
+    top: 55px;
+} 
+#pro_con>.pro_tab>a:nth-of-type(2){
+    top: 105px;
+} 
+#pro_con>.pro_tab>a:nth-of-type(3){
+    top: 155px;
+} 
+#pro_con>.pro_tab>a:nth-of-type(4){
+    top: 205px;
+} 
+
+.pro_con_car{
+    width: 900px;
+    height: 500px;
+    float: right;
+    overflow: hidden;
+}
+.pro_con_box{
+    width: 900px;
+    height: 2000px;
+    float: right;
+    transition: all 1s;
+}
+.pro_context{
+    width: 900px;
+    height: 500px;
+    float: right;
+}
+
+.pro_context h3{
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 20px;
+}
+.pro_context h3>span{
+    font-size: 12px;
+    color: #999999;
+    margin-left: 5px;
+}
+.pro_context h6{
+    font-size: 12px;
+    color: #666666;
+    margin-bottom: 20px;}
+.pro_context .img_list{
+    width: 100%;
+    height: 400px;
+    position: relative;
+}
+
+.pro_context .img_list>div{
+    width: 212px;
+    height: 400px;
+    position: absolute;
+    top: 0;
+    cursor: pointer;
+}
+.pro_context .img_list>div:nth-of-type(1){
+    left: 0;
+}
+.pro_context .img_list>div:nth-of-type(2){
+    left: 230px;
+}
+.pro_context .img_list>div:nth-of-type(3){
+    right: 230px;
+}
+.pro_context .img_list>div:nth-of-type(4){
+    right: 0;
+}
+.pro_context .img_list>div>h4{
+    text-align: center;
+    font-weight: 500;
+    margin-top: 18px;
+    font-size: 14px;
+}
+
+/* pro-tab end */

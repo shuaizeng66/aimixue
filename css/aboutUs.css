@@ -1,0 +1,385 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+
+/* 抬头 */
+#head{
+    width: 100%;
+    height: 50px;
+}
+#head .head_left{
+    width: 36%;
+    text-align: center;
+    float: left;
+}
+#head .head_left h4{
+    font-size: 18px;
+    font-family: serif;
+    margin-top: 7px;
+}
+#head .head_left h6{
+    font-size: 10px;
+    letter-spacing: 15px;
+    margin-left: 12px;
+    color: rgb(37, 33, 42);
+}
+#head .head_rigth{
+    width: 60%;
+    float: left;
+}
+#head .head_rigth ul{
+    overflow: hidden;
+    text-align: left;
+    line-height: 50px;
+}
+#head .head_rigth ul li{
+    width: 115px;
+    float: left;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+}
+#head .head_rigth ul a{
+    padding-bottom: 4px;
+    text-decoration: none;
+    color: #000;
+}
+
+#head .head_rigth ul a.active{
+    border-bottom: 2px solid #fda596;
+    color: #fda596;
+}
+/* 抬头end */
+
+
+
+/* 轮播 */
+#carousel{
+    width: 100%;
+    height: 315px;
+    position: relative;
+}
+
+#carousel .car_img{
+    width: 100%;
+    height: 315px;
+    position: relative;
+}
+#carousel .car_img img{
+    width: 100%;
+    height: 315px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: all 1s;
+}
+#carousel .car_img img.active_car{
+    opacity: 1 ;
+}
+#carousel button{
+    width: 60px;
+    height: 60px;
+    background: rgba(0, 0, 0, .5);
+    color: aliceblue;
+    cursor: pointer;
+    border-radius: 50%;
+    outline: none;
+    position: absolute;
+    top: 50%;
+    margin-top: -25px;
+    border: 2px solid #000;
+    font-size: 20px;
+}
+#carousel button:nth-of-type(1){
+    left: 0px;;
+}
+#carousel button:nth-of-type(2){
+    right: 0px;
+}
+#carousel button:hover{
+    border: 2px solid #fff;
+}
+#carousel ul{
+    position: absolute;
+    left: 47%;
+    bottom: 35px;
+}
+#carousel ul li{
+    width: 10px;
+    height: 10px;
+    background: rgb(14, 1, 1);
+    float: left;
+    margin: 0 10px;
+    border-radius: 50%;
+    border: 1px solid white;
+    cursor: pointer;
+}
+#carousel ul li.active_car{
+    background: #fff;
+}
+/* 轮播end */
+/* subnav */
+#nav{
+    width: 1065px;
+    height: 50px;
+    margin: auto;
+    border-bottom: 1px solid #666666;
+    position: relative;
+}
+#nav span {
+    width: 100px;
+    height: 5px;
+    background: white;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+}
+#nav .nav_box{
+    width: 180px;
+    height: 50px;
+    float: right;
+    position: relative;
+}
+#nav .nav_box h6{
+    position: absolute;
+    bottom: 0;
+    font-size: 14px;
+    font-weight: 500;
+}
+#nav .nav_box h6:nth-of-type(1){
+    left: 0;
+}
+#nav .nav_box h6:nth-of-type(2){
+    left: 27%;
+}
+#nav .nav_box h6:nth-of-type(3){
+    right: 0;
+    color: red;
+}
+
+/* subnav end */
+
+#us_con{
+    width: 1065px;
+    height: 590px;
+    margin: auto;
+    position: relative;
+}
+#us_con .us_tab{
+    width: 140px;
+    height: 300px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#us_con .us_tab h3{
+    position: absolute;
+    left: 38px;
+    top: 0px;
+}
+#us_con .us_tab a{
+    position: absolute;
+    text-decoration: none;
+    left: 44px;
+    cursor: pointer;
+}
+#us_con .us_tab a:nth-of-type(1){
+    top: 54px;
+    /* color: red; */
+}
+
+#us_con .us_tab a:nth-of-type(2){
+    top: 102px;
+    color: #000;
+
+}
+#us_con .us_tab span:nth-of-type(1){
+    height: 15px;
+    border: 0.5px solid #000000;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+#us_con .us_tab span:nth-of-type(2){
+    position: absolute;
+    right: 0;
+    top: 53px;
+}
+
+
+.car{
+    width: 925px;
+    height: 590px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+#us_con .us_tabitem{
+    width: 925px;
+    height: 550px;
+    background: #fff;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: all 1s;
+    opacity: 1;
+}
+#us_con .us_tabitem .us_txt{
+    width: 49%;
+    height: 550px;
+    float: left;
+}
+#us_con .us_tabitem .us_img{
+    width: 49%;
+    height: 550px;
+    float: left;
+
+}
+.us_rigthcon{
+    width: 50%;
+    margin-top: 25px;
+    float: left;
+    position: relative;
+}
+.us_rigthcon img{
+    width: 360px;
+    position: absolute;
+    top: 30px;
+    left: 53px;
+}
+.us_rigthcon div:nth-of-type(1){
+    width: 360px;
+    height: 395px;;
+    border: 2px solid gray;
+    position: absolute;
+    top: 69px;
+    left: 20px;
+}
+.us_rigthcon div:nth-of-type(2){
+    width: 80px;
+    height: 80px;
+    background: gray;
+    position: absolute;
+    top: 11px;
+    right: 31px;
+}
+
+.us_txt div{
+    width: 418px;
+    margin-left: 35px;
+}
+
+.us_txt div h5{
+    font-size: 14px;
+    margin-top: 25px;
+}
+.us_txt div img{
+    width: 435px;
+}
+.us_txt div span{
+    font-size: 12px;
+
+}
+
+.us_tabitem2{
+    width: 890px;
+    height: 550px;
+    background: #fff;
+    position: relative;
+    float: right;
+    opacity: 0;
+    transition: all 1s;
+}
+.us_tabitem2 div{
+    width: 427.5px;
+    float: left;
+    position: absolute;
+    top: 25px;
+}
+.us_tabitem2 .txt{
+    height: 150px;
+}
+.us_tabitem2 .img{
+    height: 185px;
+}
+.us_tabitem2 .txt h5{
+    font-weight: 500;
+    font-size: 16px;
+}
+.us_tabitem2 .txt h6{
+    font-weight: 400;
+    color: #999999;
+    font-size: 12px;
+    position: absolute;
+    top: 5px;
+    left: 92px;
+}
+.us_tabitem2 .txt span{
+    font-size: 12px;
+    color: #727272;
+    font-weight: 600;
+}
+.us_tabitem2 div:nth-of-type(1){
+    width: 450px;
+}
+.us_tabitem2 div:nth-of-type(1)>img{
+    width: 465px;
+}
+.us_tabitem2 div:nth-of-type(2){
+    right: 10px;
+    top: 225px;
+    width: 420px;
+}
+.us_tabitem2 div:nth-of-type(2)>img{
+    width: 441px;
+}
+.us_tabitem2 div:nth-of-type(3){
+    left: 0;
+    top: 390px;
+    background: #f3f3f3;
+    padding: 13px;
+    z-index: 1;
+    height: 150px;
+}
+.us_tabitem2 div:nth-of-type(3)>img{
+    width: 424px;
+}
+.us_tabitem2 div:nth-of-type(4){
+    right: 0;
+}
+.us_tabitem2 div:nth-of-type(5){
+    top:175px;
+    left: 0;
+}
+.us_tabitem2 div:nth-of-type(6){
+    right: 5px;
+    top: 380px;
+}
+.us_tabitem2 .img img{
+    width: 445px;
+    height: 185px;
+}
+
+
+
+
+
+
+
+
+
+
+#tail_bg{
+    width: 100%;
+    height: 64px;
+}
+#tail_bg img{
+    width: 100%;
+    height: auto;
+}

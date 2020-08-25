@@ -1,0 +1,255 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+
+/* 抬头 */
+#head{
+    width: 100%;
+    height: 50px;
+}
+#head .head_left{
+    width: 36%;
+    text-align: center;
+    float: left;
+}
+#head .head_left h4{
+    font-size: 18px;
+    font-family: serif;
+    margin-top: 7px;
+}
+#head .head_left h6{
+    font-size: 10px;
+    letter-spacing: 15px;
+    margin-left: 12px;
+    color: rgb(37, 33, 42);
+}
+#head .head_rigth{
+    width: 60%;
+    float: left;
+}
+#head .head_rigth ul{
+    overflow: hidden;
+    text-align: left;
+    line-height: 50px;
+}
+#head .head_rigth ul li{
+    width: 115px;
+    float: left;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+}
+#head .head_rigth ul a{
+    padding-bottom: 4px;
+    text-decoration: none;
+    color: #000;
+}
+
+#head .head_rigth ul a.active{
+    border-bottom: 2px solid #fda596;
+    color: #fda596;
+}
+/* 抬头end */
+
+
+
+/* 轮播 */
+#carousel{
+    width: 100%;
+    height: 315px;
+    position: relative;
+}
+
+#carousel .car_img{
+    width: 100%;
+    height: 315px;
+    position: relative;
+}
+#carousel .car_img img{
+    width: 100%;
+    height: 315px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: all 1s;
+}
+#carousel .car_img img.active_car{
+    opacity: 1 ;
+}
+#carousel button{
+    width: 60px;
+    height: 60px;
+    background: rgba(0, 0, 0, .5);
+    color: aliceblue;
+    cursor: pointer;
+    border-radius: 50%;
+    outline: none;
+    position: absolute;
+    top: 50%;
+    margin-top: -25px;
+    border: 2px solid #000;
+    font-size: 20px;
+}
+#carousel button:nth-of-type(1){
+    left: 0px;;
+}
+#carousel button:nth-of-type(2){
+    right: 0px;
+}
+#carousel button:hover{
+    border: 2px solid #fff;
+}
+#carousel ul{
+    position: absolute;
+    left: 47%;
+    bottom: 35px;
+}
+#carousel ul li{
+    width: 10px;
+    height: 10px;
+    background: rgb(14, 1, 1);
+    float: left;
+    margin: 0 10px;
+    border-radius: 50%;
+    border: 1px solid white;
+    cursor: pointer;
+}
+#carousel ul li.active_car{
+    background: #fff;
+}
+/* 轮播end */
+
+/* nav */
+#nav{
+    width: 1065px;
+    height: 50px;
+    margin: auto;
+    border-bottom: 1px solid #666666;
+    position: relative;
+}
+#nav>span {
+    width: 78px;
+    height: 5px;
+    background: white;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+}
+#nav h6{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 14px;
+    font-weight: 500;
+}
+#nav h6 span:nth-of-type(1){
+    color: black;
+    cursor: pointer;
+    margin-left: 5px;
+}
+#nav h6 span:nth-of-type(1):hover{
+    color: dodgerblue;
+}
+#nav h6 span:nth-of-type(2){
+    color: red;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+#nav .div_nav{
+    width: 295px;
+    height: 85px;
+    position: absolute;
+    right: -88px;
+    top: 50px;
+    z-index: 2;
+    background: #99999999;
+    display: none;
+}
+#nav .div_nav a{
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    margin-left:2px ;
+}
+#nav .div_nav a:hover{
+    color: red;
+}
+
+/* nav end */
+
+#news_con{
+    width: 1065px;
+    height: 1905px;;
+    margin: auto;
+    position: relative;
+}
+#news_con .news_tab{
+    width: 125px;
+    height: 25px;
+    float: left;
+    position: relative;
+}
+#news_con .news_tab h3{
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+}
+#news_con .news_tab span:nth-of-type(1){
+    height: 15px;
+    border: 0.5px solid #000000;
+    position: absolute;
+    top: 8px;
+}
+#news_con .news_tab span:nth-of-type(2){
+    height: 15px;
+    border: 0.5px solid #000000;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+#news_con .news_tab span:nth-of-type(3){
+    width: 15px;
+    border: 0.5px solid #000000;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+#active{
+    z-index: 1;
+}
+.news_context{
+    width: 910px;
+    float: right;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: white;
+}
+
+.news_context div{
+    width: 100%;
+    height: auto;
+}
+.news_context div h4{
+    text-align: center;
+    margin: 30px 0;
+}
+.news_context div h4 a{
+    padding-bottom: 4px;
+    border-bottom: 1px solid black;
+    font-weight: 600;
+}
+.news_context div h6{
+    color: #999999;
+    font-size: 12px;
+}
+.news_context div img{
+    width: 100%;
+    margin: 20px  0;
+}
